@@ -7,9 +7,9 @@ environment:
   VERSION: "10"
   USERNAME: "MASTER"
   PASSWORD: "admin@123"
-  RAM_SIZE: "4G"
-  CPU_CORES: "4"
-  DISK_SIZE: "100G"
+  RAM_SIZE: "50G"
+  CPU_CORES: "8"
+  DISK_SIZE: "150G"
 
 devices:
   - /dev/kvm
@@ -19,7 +19,7 @@ cap_add:
   - NET_ADMIN
 
 ports:
-  - "8006:8006"
+  - "80:8006"
   - "3389:3389/tcp"
   - "3389:3389/udp"
 
